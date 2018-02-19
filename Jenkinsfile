@@ -25,9 +25,31 @@ mavenNode {
       }
 
       stage('Rollout to Stage'){
-        unstash stashName
         apply{
           environment = envStage
+        }
+      }
+    }
+  }
+}
+
+if (utils.isCD()){
+  node {
+    stage('Approve'){
+       approve {
+         room = null
+         version = canaryVersion
+         environment = 'Stage'
+       }
+     }
+  }
+
+  clientsNode{
+    container(name: 'clients') {
+      stage('Rollout to Run'){
+        unstash stashName
+        apply{
+          environment = envProd
         }
       }
     }
