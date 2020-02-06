@@ -95,4 +95,4 @@ $ curl http://booster-configmap-vertx-MY_PROJECT_NAME.LOCAL_OPENSHIFT_HOSTNAME/a
 == More Information
 You can learn more about this booster and rest of the Eclipse Vert.x runtime in the link:http://appdev.openshift.io/docs/vertx-runtime.html[Eclipse Vert.x Runtime Guide].
 
-![some](http://static2.clutch.co/s3fs-public/logos/6b75954c15f7fed43b8dbeeaf091caff.jpeg?fB6mdIIp0_3xbN3xZwC1hUOZK_ba2Aka)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
