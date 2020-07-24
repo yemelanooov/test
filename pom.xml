@@ -19,6 +19,7 @@
     <vertx.verticle>io.openshift.booster.HttpApplication</vertx.verticle>
   </properties>
 
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
